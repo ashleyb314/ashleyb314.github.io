@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--icons-->
+    <script src="https://kit.fontawesome.com/db8d281fd0.js" crossorigin="anonymous"></script>
+
+    <!--my additional styles-->
+    <style>
+        p {
+            font-size: 16px;
+        }
+
+        hr {
+            color: darkgray;
+        }
+
+        #about {
+            text-align: center;
+        }
+
+        #projects-content {
+            width: 80%;
+            margin: auto;
+        }
+
+        #education-content {
+            width: 80%;
+            margin: auto;
+        }
+
+        #activities-content {
+            width: 80%;
+            margin: auto;
+        }
+
+        .display-4 {
+            text-align: center;
+        }
+
+        .card {
+            border-color: white;
+            /*padding-bottom: 20px;*/
+        }
+
+        .project-card {
+            padding-bottom: 20px !important;
+        }
+
+        .card-title {
+            padding-top: 20px;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .grid-item {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+        }
+
+        .image {
+            padding: 40px 20px 20px 10px;
+        }
+
+        /* when the screen is resized bellow 767px*/
+        @media (max-width: 767px) {
+            .image {
+                padding: 30px 20px 10px 20px;
+            }
+        }
+
+        .grid-item-edu {
+            border-radius: 20px;
+
+        }
+
+        .edu-body {
+            padding: 30px;
+        }
+
+        .li {
+            padding-left: 20px;
+        }
+
+        .grid-item2-edu {
+            border-radius: 20px;
+        }
+
+        .icon {
+            font-size: 30px;
+        }
+    </style>
+
+    <!--nothing in this file-->
+    <script src="js/scripts.js"></script>
+
+</head>
+
+<body>
+
+    <!-- navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container px-4">
+            <a class="navbar-brand" href="#">Ashley's Resume</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-muted" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+
+    <div id="main">
+
+        <div id="about" class="mb-3">
+            <div class="display-3 mb-4" id="title">About me</div>
+            <div class="fs-3 fw-light text-muted mb-4">Hi, I'm Ashley, a high school student who likes to code for fun.
+            </div>
+            <a class="btn btn-outline-primary m-2" href="#projects">Projects</a>
+            <a class="btn btn-outline-primary m-2" href="#education">Education</a>
+            <a class="btn btn-outline-primary m-2" href="#activities">Activities</a>
+        </div>
+
+        <br> <!--line break-->
+
+        <div id="projects" class="container-fluid bg-light text-dark">
+            <div class="container bg-light p-2">
+                <h1 class="display-4">Projects</h1>
+            </div>
+        </div>
+
+        <br><br> <!--line break-->
+
+        <div id="projects-content">
+
+            <!--project card 1-->
+            <div class="container-fluid grid-item mb-5">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card project-card">
+                            <div class="row g-0 "> <!--align-items-center-->
+                                <div class="col-md-4 order-md-2 d-flex align-items-center image">
+                                    <img src="/assets/cow.png" alt="Image" class="img-fluid">
+                                </div>
+                                <div class="col-md-8 order-md-1">
+                                    <div class="card-body d-flex flex-column justify-content-start">
+                                        <h5 class="card-title">3D Model Viewer</h5>
+                                        <hr>
+                                        <p class="card-text mt-2"><strong>Summary: </strong><em>This program loads any
+                                                OBJ
+                                                file onto the user's screen and lets them perform transformations on it,
+                                                such as scaling and rotating.</em></p>
+                                        <p class="card-text "><a href="assets/3d_model_viewer.mp4" target="_blank">Watch
+                                                Presentation</a> </p>
+                                        <p class="card-text">For this project, I used Java to parce an OBJ file of
+                                            vertices and faces, then drew them on the user's screen. From there, I
+                                            defined different Matrix and Vector classes. After applying translations and
+                                            transformations on all the vertices, I redrew the new image with the updated
+                                            coordinates. I used different key presses to trigger the movement.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--project card 2-->
+            <div class="container-fluid grid-item mb-5">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card project-card">
+                            <div class="row g-0 ">
+                                <div class="col-md-4 order-md-2 d-flex align-items-center image">
+                                    <img src="/assets/sudoku.png" alt="Image" class="img-fluid">
+                                </div>
+                                <div class="col-md-8 order-md-1">
+                                    <div class="card-body d-flex flex-column justify-content-start">
+                                        <h5 class="card-title">Sudoku Solver with Computer Vision</h5>
+                                        <hr>
+                                        <p class="card-text mt-2"><strong>Summary: </strong><em>This program solves
+                                                sudoku
+                                                puzzles from a photo, then displays the solved result back onto the same
+                                                image.</em></p>
+                                        <p class="card-text "><a href="assets/sudoku_solver.pdf" target="_blank">View
+                                                Slideshow</a> </p>
+                                        <p class="card-text">For this project, I used OpenCV's Python library to take a
+                                            sudoku puzzle and break it down into its "cells". Then, I used Pytesseract
+                                            to correctly identify the number in each cell and take the input, and put it
+                                            into an array that I could run through my sudoku solver algorithm. The
+                                            algorithm I used was a depth-first search. From there, I took the results
+                                            and displayed them back onto the image. Depending on the puzzle, the whole
+                                            process takes a few seconds on average, with the digit recognition taking up
+                                            the most time.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--project card 3-->
+            <div class="container-fluid grid-item mb-5">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card project-card">
+                            <div class="row g-0 ">
+                                <div class="col-md-4 order-md-2 d-flex align-items-center image">
+                                    <img src="/assets/win.png" alt="Image" class="img-fluid">
+                                </div>
+                                <div class="col-md-8 order-md-1">
+                                    <div class="card-body d-flex flex-column justify-content-start">
+                                        <h5 class="card-title">WINBlock Sign Up's</h5>
+                                        <hr>
+                                        <p class="card-text  mt-2"><strong>Summary: </strong><em>With data from Sign
+                                                UpGenius, I loaded club details to design a more user-friendly UI.</em>
+                                        </p>
+                                        <p class="card-text">At my school, I thought that the current sign-up process
+                                            could be better. So, I decided to design my interface, which was all about
+                                            making things easy and enjoyable for users. For this project, I used Python
+                                            on the server side and Javascript on the client side. I tried out many
+                                            different layouts over the course of the school year to try and find the
+                                            best one.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--project card 4-->
+            <div class="container-fluid grid-item mb-5">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card project-card">
+                            <div class="row g-0 ">
+                                <div class="col-md-4 order-md-2 d-flex align-items-center image">
+                                    <img src="https://dummyimage.com/600x600/eeeeee/000000&text=No+Image+Available"
+                                        alt="Image" class="img-fluid">
+                                </div>
+                                <div class="col-md-8 order-md-1">
+                                    <div class="card-body d-flex flex-column justify-content-start">
+                                        <h5 class="card-title">Mulitiplayer Pong</h5>
+                                        <hr>
+                                        <p class="card-text mt-2"><strong>Summary: </strong><em>Two players can play
+                                                pong
+                                                from differnt computers.</em></p>
+                                        <p class="card-text">With this program, two players can play pong from differnt
+                                            computers. I used Python to draw the paddle and pong ball on the user's
+                                            screen, and used the arrow keys to move the paddle up and down. The score is
+                                            displayed in the middle of the screen and updates each time someone scores a
+                                            point.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--project card 5-->
+            <div class="container-fluid grid-item mb-5">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card project-card">
+                            <div class="row g-0 ">
+                                <div class="col-md-4 order-md-2 d-flex align-items-center image">
+                                    <img src="https://dummyimage.com/600x600/eeeeee/000000&text=No+Image+Available"
+                                        alt="Image" class="img-fluid">
+                                </div>
+                                <div class="col-md-8 order-md-1">
+                                    <div class="card-body d-flex flex-column justify-content-start">
+                                        <h5 class="card-title">Handwritten Digit Detection with Neural Networks</h5>
+                                        <hr>
+                                        <p class="card-text mt-2"><strong>Summary: </strong><em>I built a neural network
+                                                and
+                                                trained it to recognize handwriten digits.</em></p>
+                                        <p class="card-text">I built a neural network and trained it to recognize
+                                            handwritten digits. I used a file with numbers 0-255 showing the brightness
+                                            of each pixel in the image. I wrote a program to define errors and tests
+                                            then I would use to train the model. From there, I trained the program using
+                                            different weights and ran tests to see if the program was getting better or
+                                            worse each time and adjusted accordingly. Unfortunately, the recognition kept
+                                            getting worse instead of better.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--project card 6-->
+            <div class="container-fluid grid-item mb-5">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card project-card">
+                            <div class="row g-0 ">
+                                <div class="col-md-4 order-md-2 d-flex align-items-center image">
+                                    <img src="assets/blackjack.png" alt="Image" class="img-fluid">
+                                </div>
+                                <div class="col-md-8 order-md-1">
+                                    <div class="card-body d-flex flex-column justify-content-start">
+                                        <h5 class="card-title">Online Blackjack</h5>
+                                        <hr>
+                                        <p class="card-text mt-2"><strong>Summary: </strong><em>A game of blackjack
+                                                against
+                                                the computer that keeps score.</em></p>
+                                        <p class="card-text">I wrote a game of blackjack against the computer that keeps
+                                            score. I used images I found online of a deck of cards and assigned a numerical
+                                            value to each card so it would be easy to total the sum of cards. Then I
+                                            displayed that number to the user and presented them with the option to take
+                                            another card or not. Whoever went over 21 first would lose and 1 would be
+                                            added to the winner's score.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--project card 7-->
+            <div class="container-fluid grid-item mb-5">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card project-card">
+                            <div class="row g-0 "> <!--align-items-center-->
+                                <div class="col-md-4 order-md-2 d-flex align-items-center image">
+                                    <img src="assets/homework.png" alt="Image" class="img-fluid">
+                                </div>
+                                <div class="col-md-8 order-md-1">
+                                    <div class="card-body d-flex flex-column justify-content-start">
+                                        <h5 class="card-title">Homework Tracker</h5>
+                                        <hr>
+                                        <p class="card-text mt-2"><strong>Summary: </strong><em>A game of blackjack
+                                                against
+                                                the computer that keeps score.</em></p>
+                                        <p class="card-text">This was my final projcet for my Web Development with
+                                            Javascript course. I was able to build a website for any idea I had, and I
+                                            choose to design a homework tracker. Users can add and delete tasks and when
+                                            tasks are marked as completed they are moved to the "done" tab. Users can
+                                            also search for tasks by subject or description.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--project card 8-->
+            <div class="container-fluid grid-item mb-5">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card project-card">
+                            <div class="row g-0 "> <!--align-items-center-->
+                                <div class="col-md-4 order-md-2 d-flex align-items-center image">
+                                    <img src="assets/catalog.png" alt="Image" class="img-fluid">
+                                </div>
+                                <div class="col-md-8 order-md-1">
+                                    <div class="card-body d-flex flex-column justify-content-start">
+                                        <h5 class="card-title">Course Catalog Viewer</h5>
+                                        <hr>
+                                        <p class="card-text mt-2"><strong>Summary: </strong><em>Teachers can create,
+                                                delete, and edit classes for students to search for and enroll in.</em>
+                                        </p>
+                                        <p class="card-text">At the end of my Web Development with Python course, I got
+                                            to create my own project using what I learned. It was a chance to apply all
+                                            the course material in a unique way. I decided to make an website that lets
+                                            student search for possible courses to take and shows additional details
+                                            such as the teacher, description, and difficuly. If the user is logged in as
+                                            a teacher, they can create new courses and view all the enrolled studens in
+                                            their created courses.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!--projects-content end-->
+
+        <br> <!--line break-->
+
+        <div id="education" class="container-fluid bg-light text-dark">
+            <div class="container bg-light p-2">
+                <h1 class="display-4">Education</h1>
+            </div>
+        </div>
+
+        <br><br> <!--line break-->
+
+        <div id="education-content">
+
+            <!-- education card 1-->
+            <div class="card shadow border-0 mb-5 grid-item-edu">
+                <div class="card-body edu-body">
+                    <div class="row align-items-stretch gx-5">
+                        <div class="col-lg-4 text-center text-lg-start mb-4 mb-lg-0">
+                            <div
+                                class="bg-light p-4 rounded-4 h-100 d-flex flex-column justify-content-between grid-item2-edu">
+                                <div>
+                                    <h5 class="text-primary mb-3">2022-2026</h5>
+                                    <h4 class="mb-2">Winchester High School, MA</h4>
+                                    <p class="text-muted"><em>High School Degree</em></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Relevent Course</th>
+                                            <th scope="col">Final Grade</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Honors Web Design 1</td>
+                                            <td>A+</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Honors Web Design 2</td>
+                                            <td>A+</td>
+                                        </tr>
+                                        <!--Future courses
+                                        <tr>
+                                            <td>AP Computer Science Principles (anticipated)</td>
+                                            <td>N/A</td>
+                                        </tr>
+                                        <tr>
+                                            <td>AP Java (anticipated)</td>
+                                            <td>N/A</td>
+                                        </tr>-->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- education card 2-->
+            <div class="card shadow border-0 mb-5 grid-item-edu">
+                <div class="card-body edu-body">
+                    <div class="row align-items-stretch gx-5">
+                        <div class="col-lg-4 text-center text-lg-start mb-4 mb-lg-0">
+                            <div
+                                class="bg-light p-4 rounded-4 h-100 d-flex flex-column justify-content-between grid-item2-edu">
+                                <div>
+                                    <h5 class="text-primary mb-3">2021-2023</h5>
+                                    <h4 class="mb-2">Johns Hopkins CTY</h4>
+                                    <p class="text-muted"><em>Online Certification</em></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Course</th>
+                                            <th scope="col">Final Grade</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Introduction to Java</td>
+                                            <td>A</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Web Programming with Python and JavaScript</td>
+                                            <td>A+</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- education card 3-->
+            <div class="card shadow border-0 mb-5 grid-item-edu">
+                <div class="card-body edu-body">
+                    <div class="row align-items-stretch gx-5">
+                        <div class="col-lg-4 text-center text-lg-start mb-4 mb-lg-0">
+                            <div
+                                class="bg-light p-4 rounded-4 h-100 d-flex flex-column justify-content-between grid-item2-edu">
+                                <div>
+                                    <h5 class="text-primary mb-3">2023-2024</h5>
+                                    <h4 class="mb-2">Harvard Extension School</h4>
+                                    <p class="text-muted"><em>Online Certification</em></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Course</th>
+                                            <th scope="col">Final Grade</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Web Programming with Python and JavaScript</td>
+                                            <td>A</td>
+                                        </tr>
+                                        <!--Future courses
+                                        <tr>
+                                            <td>Data Structures (anticipated)</td>
+                                            <td>N/A</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Web Application Development using Node.js (anticipated)</td>
+                                            <td>N/A</td>
+                                        </tr>-->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- education card 4-->
+            <div class="card shadow border-0 mb-5 grid-item-edu">
+                <div class="card-body edu-body">
+                    <div class="row align-items-stretch gx-5">
+                        <div class="col-lg-4 text-center text-lg-start mb-4 mb-lg-0">
+                            <div
+                                class="bg-light p-4 rounded-4 h-100 d-flex flex-column justify-content-between grid-item2-edu">
+                                <div>
+                                    <h5 class="text-primary mb-3">2023</h5>
+                                    <h4 class="mb-2">North Shore Community College</h4>
+                                    <p class="text-muted"><em>Online Certification</em></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Course</th>
+                                            <th scope="col">Final Grade</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Computer Science 2 (Java 2) (in progress)</td>
+                                            <td>N/A</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div><!--education-content end-->
+
+        <br> <!--line break-->
+
+        <div id="activities" class="container-fluid bg-light text-dark">
+            <div class="container bg-light p-2">
+                <h1 class="display-4">Activities</h1>
+            </div>
+        </div>
+
+        <br><br> <!--line break-->
+
+        <div id="activities-content">
+
+            <!--activity card 1-->
+            <div class="card shadow border-0 mb-5 grid-item-edu">
+                <div class="card-body edu-body">
+                    <div class="row align-items-stretch gx-5">
+                        <div class="col-lg-12 text-center text-lg-start mb-4 mb-lg-0">
+                            <div
+                                class="bg-light p-4 rounded-4 h-100 d-flex flex-column justify-content-between grid-item2-edu">
+                                <div>
+                                    <h5 class="text-primary mb-3">President</h5>
+                                    <h4 class="mb-2">Girls Who Code Club</h4>
+                                    <p class="text-muted"><em>9th-present: Member<br>10th-present: President</em></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--activity card 2-->
+            <div class="card shadow border-0 mb-5 grid-item-edu">
+                <div class="card-body edu-body">
+                    <div class="row align-items-stretch gx-5">
+                        <div class="col-lg-12 text-center text-lg-start mb-4 mb-lg-0">
+                            <div
+                                class="bg-light p-4 rounded-4 h-100 d-flex flex-column justify-content-between grid-item2-edu">
+                                <div>
+                                    <h5 class="text-primary mb-3">Officer</h5>
+                                    <h4 class="mb-2">Computer Science Club</h4>
+                                    <p class="text-muted"><em>9th-present: Member<br>10th-present: Officer</em></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--activity card 3-->
+            <div class="card shadow border-0 mb-5 grid-item-edu">
+                <div class="card-body edu-body">
+                    <div class="row align-items-stretch gx-5">
+                        <div class="col-lg-12 text-center text-lg-start mb-4 mb-lg-0">
+                            <div
+                                class="bg-light p-4 rounded-4 h-100 d-flex flex-column justify-content-between grid-item2-edu">
+                                <div>
+                                    <h5 class="text-primary mb-3">Member</h5>
+                                    <h4 class="mb-2">Philosophy Club</h4>
+                                    <p class="text-muted"><em>9th-present: Member</em></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--activity card 4-->
+            <div class="card shadow border-0 mb-5 grid-item-edu">
+                <div class="card-body edu-body">
+                    <div class="row align-items-stretch gx-5">
+                        <div class="col-lg-12 text-center text-lg-start mb-4 mb-lg-0">
+                            <div
+                                class="bg-light p-4 rounded-4 h-100 d-flex flex-column justify-content-between grid-item2-edu">
+                                <div>
+                                    <h5 class="text-primary mb-3">Senior</h5>
+                                    <h4 class="mb-2">Girls Scouts</h4>
+                                    <p class="text-muted"><em>1st-present: Member</em></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--activity card 5-->
+            <div class="card shadow border-0 mb-5 grid-item-edu">
+                <div class="card-body edu-body">
+                    <div class="row align-items-stretch gx-5">
+                        <div class="col-lg-12 text-center text-lg-start mb-4 mb-lg-0">
+                            <div
+                                class="bg-light p-4 rounded-4 h-100 d-flex flex-column justify-content-between grid-item2-edu">
+                                <div>
+                                    <h5 class="text-primary mb-3">Assistant</h5>
+                                    <h4 class="mb-2">Creative Computing Club</h4>
+                                    <p class="text-muted"><em>8th: Teaching assistant</em></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!--activities-content end-->
+
+    </div> <!--main end-->
+
+    <!--footer-->
+    <div class="flex-shrink-0 py-4 bg-light text-black-50">
+        <footer>
+            <ul class="nav justify-content-center border-bottom pb-3 mb-4">
+                <li class="nav-item"><a href="https://www.linkedin.com/in/byrne-ashley/" target="_blank"
+                        class="nav-link px-2 text-muted"><i class="fa-brands fa-linkedin icon"></i></a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><i
+                            class="fa-brands fa-square-github icon"></i></a></li>
+            </ul>
+            <p class="text-center text-muted">Layout inspired by <a href="https://startbootstrap.com/previews/personal"
+                    target="_blank">Start Bootstrap: Personal</a></p>
+            <p class="text-center text-muted">© 2023 Ashley Byrne</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
