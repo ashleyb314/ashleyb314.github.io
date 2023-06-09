@@ -12,6 +12,10 @@
 
     <!--my additional styles-->
     <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
         p {
             font-size: 16px;
         }
@@ -105,7 +109,7 @@
 <body>
 
     <!-- navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" >
         <div class="container px-4">
             <a class="navbar-brand" href="#">Ashley's Resume</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
@@ -113,6 +117,9 @@
                     class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-muted" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link text-muted" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link text-muted" href="#activities">Activities</a></li>
                     <li class="nav-item"><a class="nav-link text-muted" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -134,9 +141,9 @@
 
         <br> <!--line break-->
 
-        <div id="projects" class="container-fluid bg-light text-dark">
-            <div class="container bg-light p-2">
-                <h1 class="display-4">Projects</h1>
+        <div id="projects" class="container-fluid bg-info text-dark" style="background-color: #bbe6f4 !important;">
+            <div class="container p-2">
+                <h1 class="display-4 text-dark">Projects</h1>
             </div>
         </div>
 
@@ -222,7 +229,7 @@
                                 </div>
                                 <div class="col-md-8 order-md-1">
                                     <div class="card-body d-flex flex-column justify-content-start">
-                                        <h5 class="card-title">WINBlock Sign Up's</h5>
+                                        <h5 class="card-title">WINBlock Sign Ups</h5>
                                         <hr>
                                         <p class="card-text  mt-2"><strong>Summary: </strong><em>With data from Sign
                                                 UpGenius, I loaded club details to design a more user-friendly UI.</em>
@@ -293,7 +300,8 @@
                                             of each pixel in the image. I wrote a program to define errors and tests
                                             then I would use to train the model. From there, I trained the program using
                                             different weights and ran tests to see if the program was getting better or
-                                            worse each time and adjusted accordingly. Unfortunately, the recognition kept
+                                            worse each time and adjusted accordingly. Unfortunately, the recognition
+                                            kept
                                             getting worse instead of better.</p>
                                     </div>
                                 </div>
@@ -320,7 +328,8 @@
                                                 against
                                                 the computer that keeps score.</em></p>
                                         <p class="card-text">I wrote a game of blackjack against the computer that keeps
-                                            score. I used images I found online of a deck of cards and assigned a numerical
+                                            score. I used images I found online of a deck of cards and assigned a
+                                            numerical
                                             value to each card so it would be easy to total the sum of cards. Then I
                                             displayed that number to the user and presented them with the option to take
                                             another card or not. Whoever went over 21 first would lose and 1 would be
@@ -347,10 +356,8 @@
                                     <div class="card-body d-flex flex-column justify-content-start">
                                         <h5 class="card-title">Homework Tracker</h5>
                                         <hr>
-                                        <p class="card-text mt-2"><strong>Summary: </strong><em>A game of blackjack
-                                                against
-                                                the computer that keeps score.</em></p>
-                                        <p class="card-text">This was my final projcet for my Web Development with
+                                        <p class="card-text mt-2"><strong>Summary: </strong><em>An easy way to track homework.</em></p>
+                                        <p class="card-text">This was my final project for my Web Development with
                                             Javascript course. I was able to build a website for any idea I had, and I
                                             choose to design a homework tracker. Users can add and delete tasks and when
                                             tasks are marked as completed they are moved to the "done" tab. Users can
@@ -400,8 +407,8 @@
 
         <br> <!--line break-->
 
-        <div id="education" class="container-fluid bg-light text-dark">
-            <div class="container bg-light p-2">
+        <div id="education" class="container-fluid bg-info text-dark" style="background-color: #bbe6f4 !important;">
+            <div class="container p-2">
                 <h1 class="display-4">Education</h1>
             </div>
         </div>
@@ -584,8 +591,8 @@
 
         <br> <!--line break-->
 
-        <div id="activities" class="container-fluid bg-light text-dark">
-            <div class="container bg-light p-2">
+        <div id="activities" class="container-fluid bg-info text-dark" style="background-color: #bbe6f4 !important;">
+            <div class="container p-2">
                 <h1 class="display-4">Activities</h1>
             </div>
         </div>
